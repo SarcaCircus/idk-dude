@@ -1,27 +1,23 @@
-//#include <stdio.h>
 #include <iostream>
-//#include "Question4.h"
+#include <math.h>
 
 using namespace std;
-void convertToFahrenheit(double** x) {
 
-	double* x = *x * 1.8 + 32.0;
-	
-}
-void convertToCelsius(double** y) {
-	double* y = (*y - 32) / 1.8;
-}
+int fib(int n) {
+	int result;
+	if (n == 0) {
+		return 0;
+	}
+	else if (n == 1) {
+		return 1;
+	}
+	else
+		result = (1 / (sqrt(5))*(pow((1 + sqrt(5)) / 2), n) - (1 / (sqrt(5))*(pow((1 - sqrt(5)) / 2), n);
+	return result;
 
-void main() {
-	double x=25.0;
-	double y = 80.0;
-	 
-	double* px = &x;
-	double* py = &y;
-	convertToFahrenheit(&px);
-	convertToCelsius(&py);
+} 
 
-	cout << x << " degrees celsius is " << x << " degrees fahrenheit." << endl;
-	cout << y << " degrees fahrenheit is " << y << " degrees celsius." << endl;
-    
+int main() {
+	int n = 21;
+	cout << "fib(" << n << ")= " << fib(n) << endl;
 }
